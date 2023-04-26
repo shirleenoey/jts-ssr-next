@@ -22,6 +22,15 @@ const Robots = (props) => {
 	);
 }
 
+// Robots.getInitialProps = async function() {
+// 	const res = await fetch('https://jsonplaceholder.typicode.com/users');
+// 	const data = await res.json();
+// 	console.log(data);
+// 	return {
+// 		robots: data
+// 	}
+// }
+
 export async function getServerSideProps() {
 	const res = await fetch('https://jsonplaceholder.typicode.com/users');
 	const data = await res.json();
